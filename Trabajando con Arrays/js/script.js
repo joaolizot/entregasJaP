@@ -22,7 +22,7 @@ const strangeArray = [
   ["Hola mundo!"],
   "b is a letter",
   "JavaScript",
-].filter(item => typeof item === 'string').sort();
+].filter(item => typeof item === 'string').sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
 // Función que recibe por parámetro un array y muestra sus elementos en pantalla
 function showList(array) {
